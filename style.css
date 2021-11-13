@@ -1,3 +1,105 @@
-body{
-	background-color: pink;
+html { 
+	color:pink; 
+	font-size:16px;
+	margin-bottom:1px;
+}
+a:link{
+	color:red;
+	font-size:30px;	
+}
+a:visited{
+	color:green;
+	font-size:10px;
+}
+
+h1 + h2 {
+	color:lime;
+}
+
+:root {
+  --my-purple:#800080;
+}
+
+div#bla-bla > li {
+	color:var(--my-purple);
+	font-size:calc(10px*5);
+}
+h2 ~ h3{
+	color:red;
+	font-size:300%;
+}
+
+#Pristvie{color:white;}
+.humour{color:white;}
+body{background-image: linear-gradient(gray,purple);}
+
+
+h1:first-letter{
+	font-size:3cm;
+	color:white;
+}
+p:before {
+	content : open-quote;
+} 
+p:after {
+	content : close-quote;
+}
+.remm{
+	font-size:3rem;
+	margin-bottom:2rem;
+}
+.emm{
+	font-size:48px;
+	margin-bottom:48px;
+}
+.emm:first-letter{
+	font-size:3em;
+	margin-bottom:2em;
+}
+
+.posdis{
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+	background: lime;
+	color: white;
+}
+
+#two {
+	position: relative;
+	top: 20px;
+	left: 20px;
+	background: blue;
+	transition: width 1s;
+}
+#three{
+	position: absolute;
+	background: black;
+	right: 60px;
+	up: 10px;
+}
+#four{
+	display:none;
+}
+#five{
+ 	display: inline-block;
+	list-style: none;
+	border: 1px solid red;
+}
+#six{
+ 	display: inline-block;
+	list-style: none;
+	border: 3px solid blue;
+	width:60px;height:60px;
+}
+#seven{
+	display: table-cell; 
+	vertical-align: middle;
+	width:30px;
+}
+tittle{
+	color:#553366
+}
+#two:hover{
+	width:1000px;
 }
