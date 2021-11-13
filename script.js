@@ -1,8 +1,11 @@
 "use strict";
 
 alert("Сегодня мы поиграем с вами в игру! я загадал число от 0 до 9, а вы попробуете его угадать. Если ваше число меньше моего, я подскажу и выведу сумму наших чисел, а если ваше число больше - разность");
-//global variable
-var globalelite = ['privet', 'poka'];
+
+{globalThis["mama"]="papa";}
+console.log(globalThis["mama"]);
+delete globalThis["mama"];
+console.log(globalThis["mama"]);
 
 
 function boo(temp){
@@ -39,7 +42,7 @@ document.write("<br>"+temepe+"<br>");
 	if(a == b){
 		document.write("хм, будет ли это работать?");
 	}
-	if(a === b){
+	if(a===b){
 	document.write("А вот это????");
 	}
 
@@ -70,16 +73,4 @@ document.write("<br>"+temepe+"<br>");
 {
 let tmpi = Math.PI;
 document.write("<br>Округлим число PI(хаха): ",  Math.floor(tmpi),"<br>");
-}
-{
-	function globus() {
-	for(let i = 0; i < 2; i++){
-		console.log(globalelite[i]);
-		delete globalelite[i];
-		}
-	}
-
-	globus();
-
-	console.log(globalelite[0],globalelite[1]);
 }
