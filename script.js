@@ -1,12 +1,14 @@
 "use strict";
 
 alert("Сегодня мы поиграем с вами в игру! я загадал число от 0 до 9, а вы попробуете его угадать. Если ваше число меньше моего, я подскажу и выведу сумму наших чисел, а если ваше число больше - разность");
-
-{globalThis["mama"]="papa";}
-console.log(globalThis["mama"]);
-delete globalThis["mama"];
-console.log(globalThis["mama"]);
-
+//глобальная переменная----------------------
+{
+	globalThis["mama"]="papa";
+}
+	console.log(globalThis["mama"]);
+	delete globalThis["mama"];
+	console.log(globalThis["mama"]);
+//глобальная переменная---------------------
 
 function boo(temp){
 	var useless = "i am useless";
