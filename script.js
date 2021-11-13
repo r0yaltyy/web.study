@@ -36,7 +36,7 @@ document.write("<br>"+temepe+"<br>");
 	if(a == b){
 		document.write("хм, будет ли это работать?");
 	}
-	if(a===b){
+	if(a === b){
 	document.write("А вот это????");
 	}
 
