@@ -1,6 +1,9 @@
 "use strict";
 
 alert("Сегодня мы поиграем с вами в игру! я загадал число от 0 до 9, а вы попробуете его угадать. Если ваше число меньше моего, я подскажу и выведу сумму наших чисел, а если ваше число больше - разность");
+//global variable
+var globalelite = ['privet', 'poka'];
+
 
 function boo(temp){
 	var useless = "i am useless";
@@ -68,14 +71,15 @@ document.write("<br>"+temepe+"<br>");
 let tmpi = Math.PI;
 document.write("<br>Округлим число PI(хаха): ",  Math.floor(tmpi),"<br>");
 }
-
-var globalelite = ['privet', 'poka'];
-
-function globus() {
-for(let i = 0; i < 2; i++){
-	console.log(globalelite[i]);
-	delete globalelite[i];
+{
+	function globus() {
+	for(let i = 0; i < 2; i++){
+		console.log(globalelite[i]);
+		delete globalelite[i];
+		}
 	}
+
+	globus();
+
+	console.log(globalelite[0],globalelite[1]);
 }
-globus();
-console.log(globalelite[0],globalelite[1]);
