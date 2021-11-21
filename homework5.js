@@ -8,12 +8,14 @@ alert("здоровья погибшим!");
 		 fire: true
 	};
 	let uspS = {
-		silencer: true
-	};
-	uspS.__proto__ = pistol; //2.Установка прототипа
-	console.log(uspS.fire);
-	console.log(uspS.silencer);
-	console.log(uspS.__proto__ === pistol) //2.Получение прототипа
+		silencer:true
+	}
+	let USPS = Object.create(uspS) 
+	console.log(USPS.silencer);
+
+	Object.setPrototypeOf(uspS, pistol);
+	console.log(uspS.fire, uspS.silencer);
+	console.log(Object.getPrototypeOf(uspS));
 }
 //1.Сlass
 {
@@ -70,7 +72,11 @@ alert("здоровья погибшим!");
 		j: true,
 		k: true,
 	};
-
+	Object.defineProperty(spasite,"tmp", {
+		enumerable: false,
+		value: "i kamnem vniiiiz s krishi domaaaaa",
+	});
+	console.log(spasite.tmp);
 	for (let key in spasite) {
 		console.log(key); //перечисляемые свойства
 	}
