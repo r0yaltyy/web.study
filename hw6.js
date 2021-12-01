@@ -11,7 +11,12 @@
 		for (let i = 0; i < document.body.childNodes.length; i++) {
       			console.log(document.body.childNodes[i]);
       			console.log(document.body.childNodes[i].attributes);
-    		}
+			if (document.body.childNodes[i].attributes != undefined){
+				document.body.childNodes[i].setAttribute("name", "My name is Harry Potter");
+				console.log("Измененный атрибут:", document.body.childNodes[i].attributes);
+			}
+
+		}
 
 		function Hi() {
 			for (var i = 0; i < arguments.length; i++) {
@@ -95,10 +100,7 @@
 
 	//погружение/всплытие
 	{
-		for(let elem of document.querySelectorAll('*')) {
-			elem.addEventListener("click", e => console.log(`Погружение: ${elem.tagName}`), true);
-    			elem.addEventListener("click", e => console.log(`Всплытие: ${elem.tagName}`));
- 		 }
+		document.addEventListener("click", e => console.log("Погружение: " + e.target.tagName), true);
 	}
 
 	//разные target
