@@ -100,7 +100,7 @@
 
 	//погружение/всплытие
 	{
-		document.addEventListener("click", e => console.log("Погружение: " + e.target.tagName), true);
+		document.addEventListener("click", e => console.log("Погружение: " + e.target.tagName), {capture: true});
 	}
 
 	//разные target
